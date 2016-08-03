@@ -15,8 +15,6 @@ set smartindent
 
 set expandtab
 
-set comments=sl:/*,mb:\ *,elx:\ */
-
 set ignorecase
 
 set smartcase
@@ -111,3 +109,10 @@ nmap <Leader>p "+p
 nmap <Leader>P "+P
 vmap <Leader>p "+p
 vmap <Leader>P "+P
+
+" auto comment off
+augroup auto_comment_off
+    autocmd!
+    autocmd BufEnter * setlocal formatoptions-=r
+    autocmd BufEnter * setlocal formatoptions-=o
+augroup END
