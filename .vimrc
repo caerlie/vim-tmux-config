@@ -47,6 +47,9 @@ set ruler
 
 set completeopt=longest,menu
 
+set splitright
+set splitbelow
+
 filetype on
 
 filetype plugin on
